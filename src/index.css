@@ -3,6 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +12,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1{
+  font-weight: bold;
+}
+
+.form-container{
+  background: url('../src/assests/lake-background.jpg') no-repeat 50% 40% /cover;
+  height: auto;
+  /* @apply w-2/4 p-5 rounded-2xl */
+}
+.alert-notice::after{
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border-radius: 50;
+  margin-left: 2px;
+  margin-top: -3px;
+  @apply animate-ping bg-pink-800 
+
+}
+
+
+
