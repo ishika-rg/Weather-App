@@ -13,7 +13,7 @@ const SummaryCard = ({day}) => {
         </p>
         <h1 className='text-2xl text-gray-500 tracking-widest'>
           {day.weather[0].main}
-          <img src={day_icon} className='w-1/4 inline' />
+          <img src={day_icon} alt="weather-icon" className='w-1/4 inline' />
         </h1>
         <p className='text-gray-400 text-xs uppercase tracking-wide'>
           {day.weather[0].description}

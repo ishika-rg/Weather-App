@@ -15,7 +15,7 @@ const DetailCard = ({ weatherIcon, data }) => {
             </p>
             <p className='text-2xl font-bold text-gray-800 tracking-widest'>
               {weather[0].main}
-              <img src={weatherIcon} className='w-1/4 inline' />
+              <img src={weatherIcon} alt= "weather-icon" className='w-1/4 inline' />
             </p>
             <p className='text-gray-400 text-xs uppercase tracking-widest'>
               {weather[0].description}
